@@ -88,7 +88,7 @@ class MyCallbacks : public NimBLECharacteristicCallbacks {
                                           );
 
     pCharacteristic->setCallbacks(new MyCallbacks());
-    pCharacteristic->00("Hello BLE");
+    pCharacteristic->("Hello BLE");
     pService->start();
 
     NimBLEAdvertising *pAdvertising = NimBLEDevice::getAdvertising();
